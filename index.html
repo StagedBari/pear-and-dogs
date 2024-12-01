@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pair and Dogs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        header img {
+            width: 150px; /* Resize logo if needed */
+            height: auto;
+        }
+        header h1 {
+            font-style: italic;
+            text-transform: uppercase;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+        /* Top Banner Style */
+        #banner {
+            background-color: #ADD8E3; /* Green banner */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 1rem;
+            font-weight: bold;
+            position: relative;
+        }
+
+        /* Dog Paw Icon in Banner( need to be changed) */
+        #banner .paw-icon {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 2rem;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 0;
+            margin: 20px 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        #home {
+            padding: 50px 20px;
+        }
+        #shop {
+            padding: 50px 20px;
+            background-color: #333;
+        }
+        #features ul {
+            list-style: none;
+            padding: 0;
+        }
+        #features ul li {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+        }
+        /* Account Section */
+        .account-section {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .account-section input[type="email"] {
+            padding: 10px;
+            font-size: 1rem;
+            width: 250px;
+            border-radius: 5px;
+            border: none;
+        }
+        .account-section button {
+            padding: 10px 20px;
+            background-color: #ADD8E3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+        .account-section button:hover {
+            background-color: #45a049;
+        }
+        /* Image Style for Dog Crate */
+        #shop img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Banner -->
+    <div id="banner">
+        <div class="paw-icon">🐾</div>
+        <p>Free Shipping on All Orders! Sign up now for exclusive offers.</p>
+    </div>
+
+    <header>
+        <!-- Logo Image -->
+        <img src="temp-logo.jpg" alt="Pair and Dogs Logo">
+        <h1>Pair and Dogs</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to Pair and Dogs!</h1>
+            <p>Your go-to destination for premium dog crates with comfort and style.</p>
+            <button style="background-color: #fff; color: #000; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Shop Now</button>
+        </section>
+
+        <!-- Account Section -->
+        <section class="account-section">
+            <h2>Create an Account</h2>
+            <p>Sign up for an account to get updates and exclusive offers.</p>
+            <input type="email" placeholder="Enter your email" required>
+            <br>
+            <button>Create Account</button>
+        </section>
+
+        <section id="features">
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Removable sherpa-thick foam padding for extra comfort.</li>
+                <li>Easy-to-clean design.</li>
+                <li>Perfect for small to medium-sized dogs in cars or trucks.</li>
+            </ul>
+        </section>
+
+        <!-- Shop Section -->
+        <section id="shop">
+            <h2>Portable Dog Crate</h2>
+            <p>Our premium dog crate designed for small to medium-sized dogs, perfect for use in cars or trucks. Features removable, easy-to-clean sherpa-thick foam padding.</p>
+
+            <!-- Dog Crate Image -->
+            <img src="dog-crate-image.jpg" alt="Portable Dog Crate">
+
+            <button style="padding: 10px 20px; background-color: #ADD8E3; color: white; border: none; border-radius: 5px; cursor: pointer;">Purchase Now - $44.99</button>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Feel free to reach out to us!</p>
+            <p><strong>Jabari Jones</strong></p>
+            <p>Email: <a href="mailto:jabarinj12@icloud.com">jabarinj12@icloud.com</a></p>
+            <p>Phone: 301-404-0100</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pair and Dogs. All rights reserved.</p>
+    </footer>
+</body>
+</html>
