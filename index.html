@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pair and Dogs</title>
+    <title>Pear and Dogs</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -28,7 +28,7 @@
         }
         /* Top Banner Style */
         #banner {
-            background-color: #ADD8E3; /* Green banner */
+            background-color: #ADD8E3; /* Light blue banner */
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -36,8 +36,7 @@
             font-weight: bold;
             position: relative;
         }
-
-        /* Dog Paw Icon in Banner( need to be changed) */
+        /* Dog Paw Icon in Banner */
         #banner .paw-icon {
             position: absolute;
             top: 10px;
@@ -131,8 +130,8 @@
 
     <header>
         <!-- Logo Image -->
-        <img src="temp-logo.jpg" alt="Pair and Dogs Logo">
-        <h1>Pair and Dogs</h1>
+        <img src="temp-logo.jpg" alt="Pear and Dogs Logo">
+        <h1>Pear and Dogs</h1>
     </header>
 
     <nav>
@@ -146,9 +145,9 @@
 
     <main>
         <section id="home">
-            <h1>Welcome to Pair and Dogs!</h1>
+            <h1>Welcome to Pear and Dogs!</h1>
             <p>Your go-to destination for premium dog crates with comfort and style.</p>
-            <button style="background-color: #fff; color: #000; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Shop Now</button>
+            <button onclick="window.location.href='#shop'" style="background-color: #fff; color: #000; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Shop Now</button>
         </section>
 
         <!-- Account Section -->
@@ -177,7 +176,7 @@
             <!-- Dog Crate Image -->
             <img src="dog-crate-image.jpg" alt="Portable Dog Crate">
 
-            <button style="padding: 10px 20px; background-color: #ADD8E3; color: white; border: none; border-radius: 5px; cursor: pointer;">Purchase Now - $44.99</button>
+            <button onclick="addToCart()" style="padding: 10px 20px; background-color: #ADD8E3; color: white; border: none; border-radius: 5px; cursor: pointer;">Purchase Now - $44.99</button>
         </section>
 
         <!-- Contact Section -->
@@ -191,7 +190,16 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Pair and Dogs. All rights reserved.</p>
+        <p>&copy; 2024 Pear and Dogs. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Function to simulate adding item to cart and showing confirmation
+        function addToCart() {
+            alert("Item added to cart! Proceed to checkout.");
+            // Redirect to checkout page or show a modal for checkout (you can add more functionality here)
+        }
+    </script>
+
 </body>
 </html>
