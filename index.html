@@ -128,7 +128,10 @@
             <!-- Dog Crate Image -->
             <img src="dog-crate-image.jpg" alt="Portable Dog Crate">
 
-            <button onclick="addToCart()" style="padding: 10px 20px; background-color: #ADD8E3; color: white; border: none; border-radius: 5px; cursor: pointer;">Purchase Now - $44.99</button>
+            <!-- Redirect to Checkout after clicking Purchase Now -->
+            <a href="realcheckout.html">
+                <button style="padding: 10px 20px; background-color: #ADD8E3; color: white; border: none; border-radius: 5px; cursor: pointer;">Purchase Now - $44.99</button>
+            </a>
         </section>
 
         <section id="contact">
@@ -143,14 +146,6 @@
     <footer>
         <p>&copy; 2024 Pear and Dogs. All rights reserved.</p>
     </footer>
-
-    <script>
-        // Function to simulate adding item to cart and showing confirmation
-        function addToCart() {
-            alert("Item added to cart! Proceed to checkout.");
-            // Redirect to checkout page or show a modal for checkout (you can add more functionality here)
-        }
-    </script>
 
 </body>
 </html>
